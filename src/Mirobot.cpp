@@ -376,7 +376,7 @@ void Mirobot::calibrateHandler(){
 }
 
 void Mirobot::process(){
-  ledHandler();
+  //ledHandler();           // This takes too much time from the communication between arduino and wifi module.
   servoHandler();
   autoHandler();
   calibrateHandler();
